@@ -1,6 +1,6 @@
 package ProducerComsumer;
 
-public class Consumer {
+public class Consumer implements Runnable{
 	private Buffer buffer;
 	
 	public Consumer(Buffer b){buffer=b;}
