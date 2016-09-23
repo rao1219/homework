@@ -1,4 +1,4 @@
-package ProducerComsumerLab;
+package Lab1_2;
 
 public class Consumer implements Runnable{
 	private Buffer buffer;

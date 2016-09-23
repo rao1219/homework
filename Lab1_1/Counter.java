@@ -1,4 +1,4 @@
-package Lab1;
+package Lab1_1;
 
 public class Counter extends Thread{
 	@Override

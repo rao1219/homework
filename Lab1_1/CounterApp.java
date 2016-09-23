@@ -1,4 +1,4 @@
-package Lab1;
+package Lab1_1;
 
 public class CounterApp {
 	public static void main(String args[]){

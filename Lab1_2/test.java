@@ -1,4 +1,4 @@
-package ProducerComsumerLab;
+package Lab1_2;
 
 public class test {
 	public static void main(String args[]){

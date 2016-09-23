@@ -1,4 +1,4 @@
-package ProducerComsumerLab;
+package Lab1_2;
 
 public class Buffer {
 	private int[] buf; // buffer storage
