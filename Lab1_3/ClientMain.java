@@ -31,7 +31,7 @@ public class ClientMain
 			BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 			
 			String result = null;
-			for(int i=97;i<=128;i++){
+			for(int i=97;i<=122;i++){
 				System.out.print("Send: "+i);
 				out.println(i);
 				result = in.readLine();
