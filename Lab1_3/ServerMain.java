@@ -1,4 +1,4 @@
-package singlethread;
+package Lab1_3;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -32,12 +32,19 @@ public class ServerMain
 			
 			System.out.println("[Server Main] Received new connection");
 			
-			BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+			BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 			BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
-			PrintWriter printWriter = new PrintWriter(writer, true);
+			PrintWriter out = new PrintWriter(writer, true);
 						
 			// Sends a message via the IO stream to the socket
-			printWriter.println("Hello! raoqi");
+			//out.println("Hello! raoqi");
+			String a;
+			while((a=in.readLine())!=null){
+				int r = Integer.parseInt(a);
+				String res = String.copyValueOf(Character.toChars(r));
+				//String res = Character.toString((char)r);
+				out.println(res);
+			}
 			socket.close();
 			}
 			
