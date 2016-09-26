@@ -14,7 +14,7 @@ public class sycronizeTest{
 	}
 	public static void main(String args[]){
 		//while(myThread.isAlive());
-		sycronizeTest test = new sycronizeTest();
+		final sycronizeTest test = new sycronizeTest();
 		Thread me[]= new Thread[time];
 		for(int j=0;j<time;j++){
 			me[j]= new Thread(new Runnable() {
