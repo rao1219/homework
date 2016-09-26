@@ -9,7 +9,7 @@ import java.io.PrintWriter;
 import java.net.InetAddress;
 import java.net.Socket;
 
-public class ClientMain
+public class ASCIIClient
 {
 	
 	
@@ -19,7 +19,8 @@ public class ClientMain
 		try 
 		{
 			InetAddress ipAddr = InetAddress.getLocalHost();
-			int port = 5050;
+			//System.out.println(ipAddr);
+			int port = 8080;
 			
 			System.out.println("[Client Main] Connecting to " + ipAddr);
 			//This creates a socket connection to the server
@@ -37,6 +38,7 @@ public class ClientMain
 				result = in.readLine();
 				System.out.println("\tReceived: " + result);
 			}
+			out.println(-1);
 //			while((result = in.readLine()) != null) //loops until there is no more data to read from the socket
 //			{
 //				System.out.println("[Client Main] Message from server: " + result); //prints out the data received
@@ -51,6 +53,7 @@ public class ClientMain
 		{
 			try
 			{
+				System.out.println("Closing...");
 				socket.close();
 			}
 			catch (IOException e)

@@ -11,7 +11,7 @@ import java.net.Socket;
 
 import multithread.ServerHandler;
 
-public class ServerMain
+public class ASCIIServer
 {
 
 	
@@ -22,8 +22,8 @@ public class ServerMain
 		
 		try
 		{
-			// Start a ServerSocket that lists on port 5050
-			serverSocket = new ServerSocket(5050);
+			// Start a ServerSocket that lists on port 8080
+			serverSocket = new ServerSocket(8080);
 			
 			while(true) //Loop forever listening for connections
 			{
@@ -40,11 +40,15 @@ public class ServerMain
 			//out.println("Hello! raoqi");
 			String a;
 			while((a=in.readLine())!=null){
+				System.out.print("Received: "+a);
 				int r = Integer.parseInt(a);
+				if(r==-1)break;
 				String res = String.copyValueOf(Character.toChars(r));
 				//String res = Character.toString((char)r);
 				out.println(res);
+				System.out.println("\tSend: "+res);
 			}
+			System.out.println("\nClosing...");
 			socket.close();
 			}
 			
