@@ -18,13 +18,7 @@ public class DivideServerImpl extends UnicastRemoteObject implements IDivideServ
 {
 
 	
-<<<<<<< HEAD
-	public DivideServerImpl() throws RemoteException
-=======
-	protected DivideServerImpl() throws RemoteException
->>>>>>> 5ada17525b70f8353bd37ada99bbdfdc90adcf67
-		{}
-
+	public DivideServerImpl() throws RemoteException{}
 	@Override
 	public double divide(double d1, double d2) throws RemoteException
 	{

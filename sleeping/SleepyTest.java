@@ -29,6 +29,5 @@ public class SleepyTest implements Runnable
 		
 		thread.start();
 		
-		
 	}
 }
