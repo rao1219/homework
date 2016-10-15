@@ -24,7 +24,11 @@ public class ClientApp
 		System.out.println("Running client app...");
 		
 		// A unique URL that identifies a single service running on a server
+<<<<<<< HEAD
 		String registryURL = "rmi://localhost:8010/MyDivideServer";
+=======
+		String registryURL = "rmi://localhost/MyDivideServer";
+>>>>>>> 5ada17525b70f8353bd37ada99bbdfdc90adcf67
 		
 		try {
 			
