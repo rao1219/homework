@@ -22,6 +22,7 @@ public class Server {
 			myQuery.addPatient(p4);
 			
 			Naming.rebind("rmi://localhost:8010/MyQueryServer",myQuery);
+			System.out.println("Running query server avaliable.");
 		} catch (RemoteException | MalformedURLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

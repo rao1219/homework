@@ -10,7 +10,7 @@ public class QueryImpl extends UnicastRemoteObject implements QueryInterface{
 	public QueryImpl() throws RemoteException{
 		this.PatientList = new ArrayList<Patient>();
 	}
-	public void addPatient(Patient p)throws RemoteException{
+	public void addPatient(Patient p){
 		this.PatientList.add(p);
 	}
 	@Override
