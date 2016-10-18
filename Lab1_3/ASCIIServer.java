@@ -35,7 +35,7 @@ public class ASCIIServer
 			BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 			BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
 			PrintWriter out = new PrintWriter(writer, true);
-						
+
 			// Sends a message via the IO stream to the socket
 			//out.println("Hello! raoqi");
 			String a;
